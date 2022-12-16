@@ -42,35 +42,10 @@ const HeroSection = () => {
                 scrub: 0.5
             }
         })
-        // gsap.to('.hero-text-2', {
-        //     opacity: 1,
-        //     scale: 1.2,
-        //     scrollTrigger: {
-        //         trigger: '.hero-canvas',
-        //         start: '+=2000px',
-        //         end: '+=1000px',
-        //         scrub: 0.5,
-        //         markers: true
-        //     }
-        // })
-        // gsap.fromTo('.hero-text-2',{opacity: 0,
-        //     scale: 1,}, {
-        //     opacity: 1,
-        //     scale: 1.2,
-        //     scrollTrigger: {
-        //         trigger: '.hero-canvas',
-        //         start: '+=3000px',
-        //         end: '+=1000px',
-        //         scrub: 0.5,
-        //         markers: true
-        //     }
-        // })
-
+       
         let tl = gsap.timeline({
-            // yes, we can add it to an entire timeline!
             scrollTrigger: {
               trigger: ".hero-canvas",
-            //   pin: true,   // pin the trigger element while active
               start: "+=2000", // when the top of the trigger hits the top of the viewport
               end: "+=2000", // end after scrolling 500px beyond the start
               scrub: 1,
